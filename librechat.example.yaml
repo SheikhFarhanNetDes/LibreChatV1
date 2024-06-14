@@ -74,8 +74,8 @@ endpoints:
   azureOpenAI:
     # Endpoint-level configuration
     titleModel: "gpt-40"
-    plugins: false
-    assistants: false
+    plugins: true
+    assistants: true
     groups:
     # Group-level configuration
     - group: "ndi-search-ai-rg" #ndi-search-ai-rg, taken from skyregs resource from Azure
