@@ -73,42 +73,20 @@ endpoints:
   #   capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
   azureOpenAI:
     # Endpoint-level configuration
-    titleModel: "llama-70b-chat"
+    titleModel: "gpt-40"
     plugins: true
     assistants: true
     groups:
     # Group-level configuration
-    - group: "my-resource-westus"
-      apiKey: "${WESTUS_API_KEY}"
-      instanceName: "my-resource-westus"
+    - group: "ndi-search-ai-rg" #ndi-search-ai-rg, taken from skyregs resource from Azure
+      apiKey: "${1aa5b4ff199a4440806206643dc2b813}" #1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
+      instanceName: "ndi-search-ai-rg-eastus"
       version: "2024-03-01-preview"
       # Model-level configuration
       models:
-        gpt-4-vision-preview:
-          deploymentName: gpt-4-vision-preview
-          version: "2024-03-01-preview"
-        gpt-3.5-turbo:
-          deploymentName: gpt-35-turbo
-        gpt-4-1106-preview:
-          deploymentName: gpt-4-1106-preview
-    # Group-level configuration
-    - group: "mistral-inference"
-      apiKey: "${AZURE_MISTRAL_API_KEY}"
-      baseURL: "https://Mistral-large-vnpet-serverless.region.inference.ai.azure.com/v1/chat/completions"
-      serverless: true
-      # Model-level configuration
-      models:
-        mistral-large: true
-    # Group-level configuration
-    - group: "my-resource-sweden"
-      apiKey: "${SWEDEN_API_KEY}"
-      instanceName: "my-resource-sweden"
-      deploymentName: gpt-4-1106-preview
-      version: "2024-03-01-preview"
-      assistants: true
-      # Model-level configuration
-      models:
-        gpt-4-turbo: true
+        gpt-4o:
+          deploymentName: gpt-40
+          version: "2024-05-13"
   
 # fileConfig:
 #   endpoints:
