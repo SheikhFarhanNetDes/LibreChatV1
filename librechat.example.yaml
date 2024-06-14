@@ -5,23 +5,23 @@
 version: 1.0.9
 
 # Cache settings: Set to true to enable caching
-cache: true
+#cache: true
 
 # Custom interface configuration
-interface:
+#interface:
   # Privacy policy settings
-  privacyPolicy:
-    externalUrl: 'https://librechat.ai/privacy-policy'
-    openNewTab: true
+#  privacyPolicy:
+#    externalUrl: 'https://librechat.ai/privacy-policy'
+#    openNewTab: true
 
   # Terms of service
-  termsOfService:
-    externalUrl: 'https://librechat.ai/tos'
-    openNewTab: true
+#  termsOfService:
+#    externalUrl: 'https://librechat.ai/tos'
+#    openNewTab: true
 
 # Example Registration Object Structure (optional)
-registration:
-  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
+#registration:
+#  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
   # allowedDomains:
   # - "gmail.com"
 
