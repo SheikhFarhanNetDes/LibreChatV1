@@ -105,6 +105,10 @@ const deleteFiles = async (file_ids, user) => {
   return await File.deleteMany(deleteQuery);
 };
 
+const deleteFileById = async (file_id) => {
+  return await File.deleteOne({ file_id });
+};
+
 module.exports = {
   File,
   findFileById,
@@ -115,4 +119,5 @@ module.exports = {
   deleteFile,
   deleteFiles,
   deleteFileByFilter,
+  deleteFileById,
 };

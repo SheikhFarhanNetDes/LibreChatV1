@@ -49,7 +49,6 @@ export default function PanelFileCell({ row }: { row: Row<TFile> }) {
         status: 'warning',
       });
     }
-
     const { fileSizeLimit, supportedMimeTypes } =
       fileConfig.endpoints[endpoint] ?? fileConfig.endpoints.default;
 
@@ -63,7 +62,6 @@ export default function PanelFileCell({ row }: { row: Row<TFile> }) {
     }
 
     const isSupportedMimeType = defaultFileConfig.checkType(file.type, supportedMimeTypes);
-
     if (!isSupportedMimeType) {
       return showToast({
         message: `${localize('com_ui_attach_error_type')} ${file.type} (${endpoint})`,
