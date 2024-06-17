@@ -1,7 +1,11 @@
 # For more information, see the Configuration Guide:
 # https://www.librechat.ai/docs/configuration/librechat_yaml
-metadata:
-  version: 1.1.4
+
+# Configuration version (required)
+version: 1.1.4
+
+# Cache settings: Set to true to enable caching
+cache: true
 
 data-provider:
   check_updates:
@@ -18,3 +22,47 @@ data-provider:
     runtime: nodejs:18
   tsconfig.spec:
     runtime: nodejs:18
+
+# Custom interface configuration
+interface:
+  # Privacy policy settings
+  privacyPolicy:
+    externalUrl: 'https://librechat.ai/privacy-policy'
+    openNewTab: true
+
+  # Terms of service
+  termsOfService:
+    externalUrl: 'https://librechat.ai/tos'
+    openNewTab: true
+
+# Definition of custom endpoints
+# endpoints:
+  # assistants:
+  #   disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
+  #   pollIntervalMs: 3000  # Polling interval for checking assistant updates
+  #   timeoutMs: 180000  # Timeout for assistant operations
+  #   # Should only be one or the other, either `supportedIds` or `excludedIds`
+  #   supportedIds: ["asst_supportedAssistantId1", "asst_supportedAssistantId2"]
+  #   # excludedIds: ["asst_excludedAssistantId"]
+  #   Only show assistants that the user created or that were created externally (e.g. in Assistants playground).
+  #   # privateAssistants: false # Does not work with `supportedIds` or `excludedIds`
+  #   # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
+  #   retrievalModels: ["gpt-4-turbo-preview"]
+  #   # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
+  #   capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
+ # azureOpenAI:
+ #   # Endpoint-level configuration
+ #   titleModel: 'gpt-40'
+ #   plugins: true
+ #   assistants: true
+ #   groups:
+ #     # Group-level configuration
+ #     - group: 'ndi-search-ai-rg' # ndi-search-ai-rg, taken from skyregs resource from Azure
+ #       apiKey: '${SECRET_HERE}' # 1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
+ #       instanceName: '${ndi-search-ai-rg}'
+ #       version: '2024-03-01-preview'
+ #       # Model-level configuration
+ #       models:
+ #         gpt-4o:
+ #           deploymentName: 'gpt-40'
+ #           version: '2024-05-13'
