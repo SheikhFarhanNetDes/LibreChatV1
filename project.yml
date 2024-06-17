@@ -3,17 +3,17 @@
 
 data-provider/check_updates:
     runtime: nodejs:18
-  data-provider/package:
+data-provider/package:
     runtime: nodejs:18
-  data-provider/react-query:
+data-provider/react-query:
     runtime: nodejs:18
-  data-provider/specs:
+data-provider/specs:
     runtime: nodejs:18
-  data-provider/src:
+data-provider/src:
     runtime: nodejs:18
-  data-provider/tsconfig:
+data-provider/tsconfig:
     runtime: nodejs:18
-  data-provider/tsconfig.spec:
+data-provider/tsconfig.spec:
     runtime: nodejs:18
 
 
