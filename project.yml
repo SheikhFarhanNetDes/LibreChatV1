@@ -2,18 +2,18 @@
 
 # check_updates:
 #  runtime: nodejs:18
-package:
-  runtime: nodejs:18
-react-query:
-  runtime: nodejs:18
-specs:
-  runtime: nodejs:18
-src:
-  runtime: nodejs:18
-tsconfig:
-  runtime: nodejs:18
-tsconfig.spec:
-  runtime: nodejs:18
+#package:
+#  runtime: nodejs:18
+#react-query:
+#  runtime: nodejs:18
+#specs:
+#  runtime: nodejs:18
+#src:
+#  runtime: nodejs:18
+#tsconfig:
+#  runtime: nodejs:18
+#tsconfig.spec:
+#  runtime: nodejs:18
     
 name: librechat
 region: nyc
