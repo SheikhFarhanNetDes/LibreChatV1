@@ -1,6 +1,21 @@
 # For more information, see the Configuration Guide:
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
+data-provider/check_updates:
+    runtime: nodejs:18
+  data-provider/package:
+    runtime: nodejs:18
+  data-provider/react-query:
+    runtime: nodejs:18
+  data-provider/specs:
+    runtime: nodejs:18
+  data-provider/src:
+    runtime: nodejs:18
+  data-provider/tsconfig:
+    runtime: nodejs:18
+  data-provider/tsconfig.spec:
+    runtime: nodejs:18
+    
 # Configuration version (required)
 version: 1.0.9
 
