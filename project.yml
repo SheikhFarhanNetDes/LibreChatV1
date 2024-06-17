@@ -1,7 +1,7 @@
 # App Specification for LibreChat
 
-check_updates:
-  runtime: nodejs:18
+# check_updates:
+#  runtime: nodejs:18
 package:
   runtime: nodejs:18
 react-query:
