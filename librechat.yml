@@ -2,26 +2,26 @@
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
 # Configuration version (required)
-# version: 1.1.4
+version: 1.1.4
 
 # Cache settings: Set to true to enable caching
 cache: true
 
-data-provider:
-  check_updates:
-    runtime: nodejs:18
-  package:
-    runtime: nodejs:18
-  react-query:
-    runtime: nodejs:18
-  specs:
-    runtime: nodejs:18
-  src:
-    runtime: nodejs:18
-  tsconfig:
-    runtime: nodejs:18
-  tsconfig.spec:
-    runtime: nodejs:18
+#data-provider:
+ # check_updates:
+  #  runtime: nodejs:18
+  #package:
+  #  runtime: nodejs:18
+  #react-query:
+  #  runtime: nodejs:18
+ # specs:
+ #   runtime: nodejs:18
+ # src:
+ #   runtime: nodejs:18
+ # tsconfig:
+ #   runtime: nodejs:18
+ # tsconfig.spec:
+ #   runtime: nodejs:18
 
 # Custom interface configuration
 interface:
