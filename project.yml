@@ -74,7 +74,7 @@ interface:
 
 
 # Definition of custom endpoints
- endpoints:
+endpoints:
   # assistants:
   #   disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
   #   pollIntervalMs: 3000  # Polling interval for checking assistant updates
@@ -88,22 +88,22 @@ interface:
   #   retrievalModels: ["gpt-4-turbo-preview"]
   #   # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
   #   capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
-  azureOpenAI:
+azureOpenAI:
     # Endpoint-level configuration
     titleModel: 'gpt-40'
     plugins: true
     assistants: true
     groups:
     # Group-level configuration
-      group: 'ndi-search-ai-rg' #ndi-search-ai-rg, taken from skyregs resource from Azure
-     apiKey: '${1aa5b4ff199a4440806206643dc2b813}' #1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
-      instanceName: '${ndi-search-ai-rg}'
-      version: '2024-03-01-preview'
+        group: 'ndi-search-ai-rg' #ndi-search-ai-rg, taken from skyregs resource from Azure
+        apiKey: '${1aa5b4ff199a4440806206643dc2b813}' #1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
+        instanceName: '${ndi-search-ai-rg}'
+        version: '2024-03-01-preview'
       # Model-level configuration
-      models:
-        gpt-4o:
-          deploymentName: 'gpt-40'
-          version: '2024-05-13'
+            models:
+            gpt-4o:
+            deploymentName: 'gpt-40'
+            version: '2024-05-13'
   
 # fileConfig:
 #   endpoints:
