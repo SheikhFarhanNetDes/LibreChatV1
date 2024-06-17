@@ -1,126 +1,20 @@
 # For more information, see the Configuration Guide:
 # https://www.librechat.ai/docs/configuration/librechat_yaml
 
-project:
-  version: 1.0.9
+version: 1.1.4
 
-  data-provider:
-    check_updates:
-      runtime: nodejs:18
-    package:
-      runtime: nodejs:18
-    react-query:
-      runtime: nodejs:18
-    specs:
-      runtime: nodejs:18
-    src:
-      runtime: nodejs:18
-    tsconfig:
-      runtime: nodejs:18
-    tsconfig.spec:
-      runtime: nodejs:18
-
-  # Cache settings: Set to true to enable caching
-  cache: true
-
-  # Custom interface configuration
-  interface:
-    # Privacy policy settings
-    privacyPolicy:
-      externalUrl: 'https://librechat.ai/privacy-policy'
-      openNewTab: true
-
-    # Terms of service
-    termsOfService:
-      externalUrl: 'https://librechat.ai/tos'
-      openNewTab: true
-
-  # Example Registration Object Structure (optional)
-  # registration:
-  #  socialLogins: ['github', 'google', 'discord', 'openid', 'facebook']
-  # allowedDomains:
-  # - "gmail.com"
-
-  # tts:
-  #   url: ''
-  #   apiKey: '${TTS_API_KEY}'
-  #   model: ''
-  #   backend: ''
-  #   voice: ''
-  #   compatibility: ''
-  #   voice_settings:
-  #     similarity_boost: ''
-  #     stability: ''
-  #     style: ''
-  #     use_speaker_boost:
-  #   pronunciation_dictionary_locators: ['']
-  #  
-  # stt:
-  #   url: ''
-  #   apiKey: '${STT_API_KEY}'
-  #   model: ''
-
-  # rateLimits:
-  #  fileUploads:
-  #     ipMax: 100
-  #     ipWindowInMinutes: 60  # Rate limit window for file uploads per IP
-  #     userMax: 50
-  #     userWindowInMinutes: 60  # Rate limit window for file uploads per user
-  #   conversationsImport:
-  #     ipMax: 100
-  #     ipWindowInMinutes: 60  # Rate limit window for conversation imports per IP
-  #     userMax: 50
-  #     userWindowInMinutes: 60  # Rate limit window for conversation imports per user
-
-  # Definition of custom endpoints
-  endpoints:
-    # assistants:
-    #   disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
-    #   pollIntervalMs: 3000  # Polling interval for checking assistant updates
-    #   timeoutMs: 180000  # Timeout for assistant operations
-    #   # Should only be one or the other, either `supportedIds` or `excludedIds`
-    #   supportedIds: ["asst_supportedAssistantId1", "asst_supportedAssistantId2"]
-    #   # excludedIds: ["asst_excludedAssistantId"]
-    #   Only show assistants that the user created or that were created externally (e.g. in Assistants playground).
-    #   # privateAssistants: false # Does not work with `supportedIds` or `excludedIds`
-    #   # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
-    #   retrievalModels: ["gpt-4-turbo-preview"]
-    #   # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
-    #   capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
-    azureOpenAI:
-      # Endpoint-level configuration
-      titleModel: 'gpt-40'
-      plugins: true
-      assistants: true
-      groups:
-        # Group-level configuration
-        - group: 'ndi-search-ai-rg' # ndi-search-ai-rg, taken from skyregs resource from Azure
-          apiKey: '${1aa5b4ff199a4440806206643dc2b813}' # 1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
-          instanceName: '${ndi-search-ai-rg}'
-          version: '2024-03-01-preview'
-          # Model-level configuration
-          models:
-            gpt-4o:
-              deploymentName: 'gpt-40'
-              version: '2024-05-13'
-  
-  # fileConfig:
-  #   endpoints:
-  #     assistants:
-  #       fileLimit: 5
-  #       fileSizeLimit: 10  # Maximum size for an individual file in MB
-  #       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
-  #       supportedMimeTypes:
-  #         - "image/.*"
-  #         - "application/pdf"
-  #     openAI:
-  #       disabled: true  # Disables file uploading to the OpenAI endpoint
-  #     default:
-  #       totalSizeLimit: 20
-  #     YourCustomEndpointName:
-  #       fileLimit: 2
-  #       fileSizeLimit: 5
-  #   serverFileSizeLimit: 100  # Global server file size limit in MB
-  #   avatarSizeLimit: 2  # Limit for user avatar image size in MB
-  # See the Custom Configuration Guide for more information on Assistants Config:
-  # https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint
+data-provider:
+  check_updates:
+    runtime: nodejs:18
+  package:
+    runtime: nodejs:18
+  react-query:
+    runtime: nodejs:18
+  specs:
+    runtime: nodejs:18
+  src:
+    runtime: nodejs:18
+  tsconfig:
+    runtime: nodejs:18
+  tsconfig.spec:
+    runtime: nodejs:18
