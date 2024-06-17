@@ -15,8 +15,8 @@
 #tsconfig.spec:
 #  runtime: nodejs:18
     
-name: librechat
-region: nyc
+#name: librechat
+#region: nyc
 
 alerts:
   - rule: DEPLOYMENT_FAILED
