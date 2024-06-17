@@ -1,7 +1,7 @@
 # For more information, see the Configuration Guide:
 # https://www.librechat.ai/docs/configuration/librechat_yaml
-
-version: 1.1.4
+metadata:
+  version: 1.1.4
 
 data-provider:
   check_updates:
