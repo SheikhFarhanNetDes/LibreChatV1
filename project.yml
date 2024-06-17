@@ -99,8 +99,8 @@ azureOpenAI:
         apiKey: '${1aa5b4ff199a4440806206643dc2b813}' #1aa5b4ff199a4440806206643dc2b813, this is the gpt-40 API key from Azure AI Studio
         instanceName: '${ndi-search-ai-rg}'
         version: '2024-03-01-preview'
-      # Model-level configuration
-            models:
+            # Model-level configuration
+        models:
             gpt-4o:
             deploymentName: 'gpt-40'
             version: '2024-05-13'
